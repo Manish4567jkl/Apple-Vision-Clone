@@ -7,3 +7,82 @@ body,html{
     width: 100%;
     background-color: crimson;
 }
+.main{
+    position: relative;
+    overflow: hidden;
+}
+.page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+.page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: crimson;
+}
+
+nav{
+    height: 14vh;
+    width: 50vw;
+    
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    .nav1{
+       height: 7vh;
+       width: 50vw;
+   
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   
+       svg{
+           height: 23px;
+           
+         
+       }
+   
+       .content{
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+            gap: 25px;
+            .items{
+             font-size: 15px;
+             font-weight: 200;
+            }
+       }
+    }
+   
+    .nav2{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       margin-top: 10px;
+       position: sticky;
+   
+       h2{
+           font-size: 20px;
+           margin-left: 15px;
+           font-weight: 400;
+       }
+       button{
+           padding: 8px;
+           color:#333;
+           border-radius: 20px;
+           border: none;
+           font-weight: 300;
+           margin-right: 15px;
+       }
+    }
+   }
+   
+   nav:hover{
+       
+           cursor: pointer;
+          
+   }
