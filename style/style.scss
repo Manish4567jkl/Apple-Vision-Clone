@@ -61,16 +61,63 @@ body,html{
     }
 
     h1{
-        font-weight: 400;
+        font-weight: 500;
         font-size: 5vw;
         position: absolute;
-        bottom: 50%;
+        bottom: 20%;
         left: 50%;
         transform: translateX(-50% );
         white-space: nowrap;
     }
 }
 
+.page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+
+    video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h1{
+        font-weight: 500;
+        font-size: 5vw;
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50% );
+        white-space: nowrap;
+        text-align: center;
+    }
+}
+
+.page4{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+
+    video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h1{
+        font-weight: 500;
+        font-size: 5vw;
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50% );
+        white-space: nowrap;
+        text-align: center;
+    }
+}
 nav{
     height: 14vh;
     width: 50vw;
@@ -133,5 +180,4 @@ nav{
            cursor: pointer;
           
    }
-
 
