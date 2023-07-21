@@ -7,12 +7,77 @@
 body,html{
     height: 100%;
     width: 100%;
-    background-color: crimson;
+   
 }
 .main{
     position: relative;
     overflow: hidden;
 }
+
+nav{
+    height: 14vh;
+    width: 50vw;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    .nav1{
+       height: 7vh;
+       width: 50vw;
+     
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   
+       svg{
+           height: 23px;
+           
+         
+       }
+   
+       .content{
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+            gap: 25px;
+            .items{
+             font-size: 15px;
+             font-weight: 200;
+            }
+       }
+    }
+   
+    .nav2{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       margin-top: 6px;
+       position: sticky;
+   
+       h2{
+           font-size: 20px;
+           margin-left: 15px;
+           font-weight: 400;
+       }
+       button{
+           padding: 8px;
+           color:#333;
+           border-radius: 20px;
+           border: none;
+           font-weight: 300;
+           margin-right: 15px;
+       }
+    }
+   }
+   
+   nav:hover{
+       
+           cursor: pointer;
+          
+   }
+
+
 .page1{
     position: relative;
     height: 100vh;
@@ -118,66 +183,100 @@ body,html{
         text-align: center;
     }
 }
-nav{
-    height: 14vh;
-    width: 50vw;
-    backdrop-filter: blur(5px);
+
+.page5{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+
+    video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h1{
+        font-weight: 500;
+        font-size: 5vw;
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50% );
+        white-space: nowrap;
+        text-align: center;
+        
+    }
+    h2{
+        font-weight: 500;
+        font-size: 5vw;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50% );
+        white-space: nowrap;
+        text-align: center;
+        opacity: 0;
+    }
+}
+
+
+.page6{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+img{
+    width: 50%;
     position: absolute;
-    top: 0%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.page6-up{
+    height: 30%;
+    width: 35%;
+    background-color: #fff;
+    position: absolute;
+    top:5%;
     left: 50%;
     transform: translateX(-50%);
-    .nav1{
-       height: 7vh;
-       width: 50vw;
-     
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-   
-       svg{
-           height: 23px;
-           
-         
-       }
-   
-       .content{
-           display: flex;
-           align-items: center;
-           justify-content: space-between;
-            gap: 25px;
-            .items{
-             font-size: 15px;
-             font-weight: 200;
-            }
-       }
+    img{
+        position: absolute;
+        top: 10%;
+        left: 50%;
     }
-   
-    .nav2{
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       margin-top: 6px;
-       position: sticky;
-   
-       h2{
-           font-size: 20px;
-           margin-left: 15px;
-           font-weight: 400;
-       }
-       button{
-           padding: 8px;
-           color:#333;
-           border-radius: 20px;
-           border: none;
-           font-weight: 300;
-           margin-right: 15px;
-       }
-    }
-   }
-   
-   nav:hover{
-       
-           cursor: pointer;
-          
-   }
 
+    h2{
+        font-size: 30px;
+        text-align: center;
+        font-weight: 400;
+        color: #333;
+        position: absolute;
+        top:55%;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+   .page6-mid{
+    position: absolute;
+    bottom: 0%;
+    height: 50%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     
+     padding: 0px 20px;
+    }
+}
+}
+
+.watch{
+
+        font-size: 30px;
+        color:#ff823d;
+        font-weight: 500;
+        
+}
