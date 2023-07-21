@@ -8,12 +8,66 @@
 body, html {
   height: 100%;
   width: 100%;
-  background-color: crimson;
 }
 
 .main {
   position: relative;
   overflow: hidden;
+}
+
+nav {
+  height: 14vh;
+  width: 50vw;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav .nav1 {
+  height: 7vh;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav1 svg {
+  height: 23px;
+}
+nav .nav1 .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+nav .nav1 .content .items {
+  font-size: 15px;
+  font-weight: 200;
+}
+nav .nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+  position: sticky;
+}
+nav .nav2 h2 {
+  font-size: 20px;
+  margin-left: 15px;
+  font-weight: 400;
+}
+nav .nav2 button {
+  padding: 8px;
+  color: #333;
+  border-radius: 20px;
+  border: none;
+  font-weight: 300;
+  margin-right: 15px;
+}
+
+nav:hover {
+  cursor: pointer;
 }
 
 .page1 {
@@ -116,57 +170,89 @@ body, html {
   text-align: center;
 }
 
-nav {
-  height: 14vh;
-  width: 50vw;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+.page5 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.page5 video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page5 h1 {
+  font-weight: 500;
+  font-size: 5vw;
   position: absolute;
-  top: 0%;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-align: center;
+}
+.page5 h2 {
+  font-weight: 500;
+  font-size: 5vw;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-align: center;
+  opacity: 0;
+}
+
+.page6 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.page6 img {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page6 .page6-up {
+  height: 30%;
+  width: 35%;
+  background-color: #fff;
+  position: absolute;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
 }
-nav .nav1 {
-  height: 7vh;
-  width: 50vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.page6 .page6-up img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
 }
-nav .nav1 svg {
-  height: 23px;
-}
-nav .nav1 .content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 25px;
-}
-nav .nav1 .content .items {
-  font-size: 15px;
-  font-weight: 200;
-}
-nav .nav2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 6px;
-  position: sticky;
-}
-nav .nav2 h2 {
-  font-size: 20px;
-  margin-left: 15px;
+.page6 .page6-up h2 {
+  font-size: 30px;
+  text-align: center;
   font-weight: 400;
-}
-nav .nav2 button {
-  padding: 8px;
   color: #333;
-  border-radius: 20px;
-  border: none;
-  font-weight: 300;
-  margin-right: 15px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.page6 .page6-up .page6-mid {
+  position: absolute;
+  bottom: 0%;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
 }
 
-nav:hover {
-  cursor: pointer;
+.watch {
+  font-size: 30px;
+  color: #ff823d;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
