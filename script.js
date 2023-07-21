@@ -37,7 +37,7 @@ loco();
 
 
 gsap.to(".page1>video" , {
-  ScrollTrigger:{
+  scrollTrigger:{
     trigger:`.page1>video`,
     start:`2% top`,
     end:`bottom top`,
@@ -48,3 +48,24 @@ gsap.to(".page1>video" , {
     document.querySelector(".page1>video").play();
   }
 })
+
+gsap.to(".page1",{
+    scrollTrigger:{
+        trigger:`.page1`,
+        start:`top top`,
+        end:`bottom top`,
+         scroller:`.main`,
+         pin:true
+      }
+})
+
+gsap.to(".page1-bottom",{
+    scrollTrigger:{
+        trigger:".page1-bottom",
+        start:`5% top`,
+        end:`top bottom`,
+        scroller:`.main`,
+    },
+    opacity:0
+})
+
