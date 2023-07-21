@@ -119,3 +119,26 @@ tl.to(".page4 h1",{
   top:`-50%`,
  
 })
+
+
+tl = gsap.timeline({
+  scrollTrigger:{
+    trigger:".page5",
+    start:"top top",
+    scrub:1,
+    scroller:".main",
+    pin:true,
+    markers:true,
+
+  }
+});
+
+tl.to(".page5 h1",{
+  top:`-50%`,
+ 
+})
+tl.to(".page5 h2",{
+  top:`-50%`,
+  opacity:1,
+ 
+})
