@@ -34,3 +34,17 @@ ScrollTrigger.refresh();
 }
 
 loco();
+
+
+gsap.to(".page1>video" , {
+  ScrollTrigger:{
+    trigger:`.page1>video`,
+    start:`2% top`,
+    end:`bottom top`,
+    markers:true,
+    scroller:`.main`,
+  },
+  onStart:()=>{
+    document.querySelector(".page1>video").play();
+  }
+})
