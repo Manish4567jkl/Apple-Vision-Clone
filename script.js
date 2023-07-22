@@ -157,3 +157,41 @@ tl.to(".page7 .center",{
   top:`-50%`,
  
 })
+
+
+tl = gsap.timeline({
+  scrollTrigger:{
+    trigger:".page9",
+    start:"top top",
+    scrub:1,
+    scroller:".main",
+    pin:true,
+    markers:true,
+    backgroundColor:"black",
+
+  }
+});
+
+tl.to(".page9 .center",{
+  top:`-50%`,
+ 
+})
+
+
+tl = gsap.timeline({
+  scrollTrigger:{
+    trigger:".page11",
+    start:"top top",
+    scrub:1,
+    scroller:".main",
+    pin:true,
+    markers:true,
+    backgroundColor:"black",
+
+  }
+});
+
+tl.to(".page11 .center",{
+  top:`-50%`,
+ 
+})
