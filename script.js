@@ -35,7 +35,6 @@ ScrollTrigger.refresh();
 
 loco();
 
-
 gsap.to(".page1>video" , {
   scrollTrigger:{
     trigger:`.page1>video`,
@@ -120,7 +119,6 @@ tl.to(".page4 h1",{
  
 })
 
-
 tl = gsap.timeline({
   scrollTrigger:{
     trigger:".page5",
@@ -140,5 +138,22 @@ tl.to(".page5 h1",{
 tl.to(".page5 h2",{
   top:`-50%`,
   opacity:1,
+ 
+})
+
+tl = gsap.timeline({
+  scrollTrigger:{
+    trigger:".page7",
+    start:"top top",
+    scrub:1,
+    scroller:".main",
+    pin:true,
+    markers:true,
+
+  }
+});
+
+tl.to(".page7 .center",{
+  top:`-50%`,
  
 })
