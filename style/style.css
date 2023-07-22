@@ -208,6 +208,18 @@ nav:hover {
   height: 100vh;
   width: 100vw;
 }
+.page6 button {
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 30px;
+  font-weight: 400;
+  font-size: 20px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  color: #000;
+}
 .page6 img {
   width: 50%;
   position: absolute;
@@ -226,33 +238,125 @@ nav:hover {
 }
 .page6 .page6-up img {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
+  width: 70%;
 }
 .page6 .page6-up h2 {
   font-size: 30px;
   text-align: center;
-  font-weight: 400;
-  color: #333;
+  font-weight: 600;
+  color: #C0C0C0;
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
 }
 .page6 .page6-up .page6-mid {
   position: absolute;
-  bottom: 0%;
-  height: 50%;
+  top: 10%;
+  height: 60%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 20px;
+  padding: 0px 30px;
 }
 
 .watch {
   font-size: 30px;
   color: #ff823d;
   font-weight: 500;
+  align-items: center;
+}
+.watch svg {
+  width: 30px;
+}
+
+.page7 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.page7 video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page7 h1 {
+  font-weight: 500;
+  font-size: 5vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-align: center;
+}
+.page7 .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.page7 .center h5 {
+  font-size: 4vh;
+  font-weight: 700;
+  top: 50%;
+}
+
+.page8 {
+  position: relative;
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+}
+.page8 .left {
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+.page8 .left h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+  font-size: 32px;
+}
+.page8 .right {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+.page8 .right h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  color: #C0C0C0;
+  font-size: 3vh;
+  width: 90%;
+  font-weight: 400;
+  padding-left: 4vw;
+  margin-bottom: 10px;
+}
+.page8 .right button {
+  padding: 20px 30px;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: rgb(255, 90, 0);
+  position: absolute;
+  bottom: 30%;
+  right: 62%;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
